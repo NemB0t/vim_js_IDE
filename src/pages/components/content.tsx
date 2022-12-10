@@ -9,8 +9,9 @@ export function Content(){
                 <textarea className="w-full h-full border border-black rounded-md  box-border p-4 resize-none" placeholder="Input"/>
             </div>
             <div className="h-full w-full box-border p-4">
-                <textarea className="w-full h-full border border-black rounded-md  box-border p-4 resize-none" 
-                placeholder="Waiting for the Output" disabled={true} />
+                <div className="w-full h-full border border-black rounded-md  box-border p-4 resize-none">
+                    Waiting for the Output
+                </div>
             </div>
         </div>
     );

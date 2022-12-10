@@ -1,17 +1,16 @@
 import { type NextPage } from "next";
-// import Head from "next/head";
-// import Link from "next/link";
-
-import { trpc } from "../utils/trpc";
+import { Content } from "./components/content";
+import Footer from "./components/footer";
 import { Nav } from "./components/nav";
 
-const Home: NextPage = () => {
-  // const hello = trpc.example.hello.useQuery({ text: "from tRPC" });
 
+const Home: NextPage = () => {
   return (
-    <>
-        <Nav/>
-    </>
+    <div className="grid grid-rows-[3rem_auto_40px] h-screen">
+        <Nav />
+        <Content/>
+        <Footer/>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 export function CodeEditor(){
     return(
-        <div>
-            Code Editor
+        <div className="w-full h-full break-all p-4" contentEditable={true}>
+            
         </div>
     );
 }

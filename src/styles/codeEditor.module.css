@@ -1,0 +1,16 @@
+#mainEditor{
+    counter-reset: my-sec-counter;
+    overflow-y: scroll;
+}
+
+#mainEditor div::before{
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter) ". ";
+    color: black;
+    float:left;
+}
+
+#mainEditor div {
+    font-size: 1rem;
+    
+}
